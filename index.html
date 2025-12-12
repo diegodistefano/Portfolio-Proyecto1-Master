@@ -1,11 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diego Di Stefano Portfolio</title>
+    <meta name="description"
+        content="Portfolio personal con estilo de anime de un desarrollador junior. Proyectos, contacto y más." />
+    <meta name="author" content="Diego Di Stefano" />
+    <meta name="keywords" content="portfolio, anime, otaku, desarrollador, HTML, CSS, C#, .NET, estudiante, DAM" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <h1>Hola Mundo soy repo</h1>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#inicio" class="logo">Diego <span>OtakuDev</span></a>
+            <nav class="nav-bar" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="inicio">
+        <section class="container hero-content">
+            <div class="section-text">
+                <h1>Diego Di Stefano<br />Programador</h1>
+                <p class="section-subtitle">
+                    Desarrollador junior y fan del anime. Combino
+                    <strong>HTML, CSS, Python, Django, C#, .NET, Java, SQL, JavaScript y React.</strong>
+                    con la misma pasión con la que disfruto de cocinar un buen ramen.
+                </p>
+                <a href="#portfolio" class="btn btn-primary">Ver mis proyectos</a>
+            </div>
+            <div class="hero-foto">
+                <img src="./images/personal-image-developer-otaku.png" alt="Fotografia personal con fondo de anime." />
+            </div>
+        </section>
+
+        <!-- sobre mi -->
+        <section id="sobre-mi" class="section about">
+            <div class="container section-content">
+                <div class="section-foto">
+                    <img src="./images/manga-image-about-me.png" alt="Imagen estilo anime y manga de un programador." />
+                </div>
+                <div class="section-text">
+                    <h2 id="section-title">Sobre mí</h2>
+                    <p class="section-subtitle">
+                        Soy estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma
+                        </strong>(Prometeo-ThePowerFP) y <strong>Técnico Universitario en Programación</strong>
+                        (UTN-Arg).</br>
+                        Otaku de corazón.</br>
+                        Fanatico del mundo tech. Curioso y manitas por naturaleza.</br>
+                        A los 20 descubri mi pasión por el anime. A los 30, mi pasión por el desarrollo. Me pregunto,
+                        ¿que descubriré a los 40?
+                    </p>
+                </div>
+            </div>
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <p class="section-subtitle">
+                        <span>Front-end: </span>HTML, CSS, Tailwind, JavaScript, ReactJS.
+                    </p>
+                </article>
+                <article class="tech-card">
+                    <p class="section-subtitle">
+                        <span>Back-end: </span>C#, .NET, Python, Django, Java.
+                    </p>
+                </article>
+                <article class="tech-card">
+                    <p class="section-subtitle">
+                        <span>Bases de datos:</span> PostgreSQL, SQL Server, SQLAlchemy, Entity Framework.
+                    </p>
+                </article>
+                <article class="tech-card">
+                    <p class="section-subtitle">
+                        <span>Cloud & DevOps:</span> Google Cloud SQL & Storage, Docker, despliegue de APIs.
+                    </p>
+                </article>
+                <article class="tech-card">
+                    <p class="section-subtitle">
+                        <span>Herramientas:</span> Git, GitHub, Trello, Figma, PhotoShop, CorelDraw.
+                    </p>
+                </article>
+                <article class="tech-card">
+                    <p class="section-subtitle">
+                        <span>Idiomas:</span> Español (nativo) | Inglés (intermedio)
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+        <section id="portfolio" class="section portfolio">
+            <div class="container section-content">
+                <div class="section-foto">
+                    <img src="./images/manga-image-portfolio.png"
+                        alt="Imagen estilo anime y manga de un programador de espaldas." />
+                </div>
+                <div class="section-text">
+                    <h2 id="portfolio-title">Portfolio</h2>
+                    <p class="section-subtitle">
+                        Algunos proyectos laborales y personales (entre los cuales hay algunos inspirados en el mundo
+                        del anime y manga).
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-grid">
+                <article class="card">
+                    <img src="./images/portfolio-web-dearcadia.png" alt="Página web de comercio internacional." />
+                    <div class="project-body">
+                        <a href="https://dearcadia.com/" class="btn btn-secondary" target="_blank"
+                            rel="noopener noreferrer">De Arcadia</a>
+                        <h3>Mercaderes de Arcadia</h3>
+                        <p class="portfolio-subtitle">
+                            Sitio Web para empresa cliente Comercio Internacional.
+                        </p>
+                        <span class="tag">LowCode</span>
+                        <span class="tag">Hosting</span>
+                        <span class="tag">Dominio</span>
+                        <span class="tag">Email Corp.</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/portfolio-web-bootcamp-rock.png" alt="Página web de academia de musica." />
+                    <div class="project-body">
+                        <a href="https://diegodistefano.github.io/Tocando_el_DOM/pages/instruments.html"
+                            class="btn btn-secondary" target="_blank" rel="noopener noreferrer">BootCamp Rock</a>
+                        <h3>BootCamp Rock</h3>
+                        <p class="portfolio-subtitle">
+                            Proyecto de Academia de Musica para BootCamp F5.
+                        </p>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Colaborativo</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/portfolio-web-novelas-app.png" alt="App web de streaming audionovelas." />
+                    <div class="project-body">
+                        <a href="https://github.com/diegodistefano/app_novelas"
+                            class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Novelas App</a>
+                        <h3>App de Audionovelas</h3>
+                        <p class="portfolio-subtitle">
+                            ApiRest de scrapping y streaming de audionovelas (proyecto personal).
+                        </p>
+                        <span class="tag">JS</span>
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Google Cloud</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/portfolio-web-dotnet-desktop-app.png" alt="Aplicacion de escritorio dotnet." />
+                    <div class="project-body">
+                        <a href="https://github.com/diegodistefano/Catalogo_en_C-_DotNet"
+                            class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Desktop App</a>
+                        <h3>Catálogo de productos</h3>
+                        <p class="portfolio-subtitle">
+                            Aplicacion de Escritorio, CRUD de productos en BBDD.
+                        </p>
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Arquitectura en Capas</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- contacto -->
+        <section id="contacto" class="section contact">
+            <div class="container section-content">
+                <div class="section-foto">
+                    <img src="./images/manga-image-contact.png" alt="Imagen estilo anime y manga de un ordenador." />
+                </div>
+                <div class="section-text">
+                    <h2 id="contact-title">Contacto</h2>
+                    <p class="section-subtitle">
+                        Algunos proyectos laborales y personales (entre los cuales hay algunos inspirados en el mundo
+                        del anime y manga).
+                    </p>
+                </div>
+            </div>
+            <div class="container section-content">
+                <div class="container-form">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="data-form">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="data-form">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                        <div class="data-form">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Diego OtakuDev. Todos los derechos e izquierdos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/diegodistefano" aria-label="Perfil de GitHub" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/diegodistefano/" aria-label="Perfil de LinkedIn" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
