@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -43,19 +43,19 @@
         </section>
 
         <!-- sobre mi -->
-        <section id="sobre-mi" class="section about">
+        <section id="sobre-mi" class="section about" aria-labelledby="about-title">
             <div class="container section-content">
                 <div class="section-foto">
                     <img src="./images/manga-image-about-me.png" alt="Imagen estilo anime y manga de un programador." />
                 </div>
                 <div class="section-text">
-                    <h2 id="section-title">Sobre mí</h2>
+                    <h2 id="about-title">Sobre mí</h2>
                     <p class="section-subtitle">
                         Soy estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma
                         </strong>(Prometeo-ThePowerFP) y <strong>Técnico Universitario en Programación</strong>
-                        (UTN-Arg).</br>
-                        Otaku de corazón.</br>
-                        Fanatico del mundo tech. Curioso y manitas por naturaleza.</br>
+                        (UTN-Arg).<br />
+                        Otaku de corazón.<br />
+                        Fanatico del mundo tech. Curioso y manitas por naturaleza.<br />
                         A los 20 descubri mi pasión por el anime. A los 30, mi pasión por el desarrollo. Me pregunto,
                         ¿que descubriré a los 40?
                     </p>
@@ -96,7 +96,7 @@
         </section>
 
         <!-- portfolio -->
-        <section id="portfolio" class="section portfolio">
+        <section id="portfolio" class="section portfolio" aria-labelledby="portfolio-title">
             <div class="container section-content">
                 <div class="section-foto">
                     <img src="./images/manga-image-portfolio.png"
@@ -146,8 +146,8 @@
                 <article class="card">
                     <img src="./images/portfolio-web-novelas-app.png" alt="App web de streaming audionovelas." />
                     <div class="project-body">
-                        <a href="https://github.com/diegodistefano/app_novelas"
-                            class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Novelas App</a>
+                        <a href="https://github.com/diegodistefano/app_novelas" class="btn btn-secondary"
+                            target="_blank" rel="noopener noreferrer">Novelas App</a>
                         <h3>App de Audionovelas</h3>
                         <p class="portfolio-subtitle">
                             ApiRest de scrapping y streaming de audionovelas (proyecto personal).
@@ -162,8 +162,8 @@
                 <article class="card">
                     <img src="./images/portfolio-web-dotnet-desktop-app.png" alt="Aplicacion de escritorio dotnet." />
                     <div class="project-body">
-                        <a href="https://github.com/diegodistefano/Catalogo_en_C-_DotNet"
-                            class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Desktop App</a>
+                        <a href="https://github.com/diegodistefano/Catalogo_en_C-_DotNet" class="btn btn-secondary"
+                            target="_blank" rel="noopener noreferrer">Desktop App</a>
                         <h3>Catálogo de productos</h3>
                         <p class="portfolio-subtitle">
                             Aplicacion de Escritorio, CRUD de productos en BBDD.
@@ -178,17 +178,33 @@
         </section>
 
         <!-- contacto -->
-        <section id="contacto" class="section contact">
+        <section id="contacto" class="section contact" aria-labelledby="contact-title">
             <div class="container section-content">
                 <div class="section-foto">
                     <img src="./images/manga-image-contact.png" alt="Imagen estilo anime y manga de un ordenador." />
                 </div>
                 <div class="section-text">
                     <h2 id="contact-title">Contacto</h2>
-                    <p class="section-subtitle">
-                        Algunos proyectos laborales y personales (entre los cuales hay algunos inspirados en el mundo
-                        del anime y manga).
-                    </p>
+                    <address class="contact-list">
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:diego.distefano.1989@gmail.com">
+                                diego.distefano.1989@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <strong>Email alternativo:</strong>
+                            <a href="mailto:drdistefano89@gmail.com">
+                                drdistefano89@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <strong>Móvil:</strong>
+                            <a href="tel:+34641611156">
+                                +34 641 611 156
+                            </a>
+                        </p>
+                    </address>
                 </div>
             </div>
             <div class="container section-content">
@@ -200,7 +216,7 @@
                         </div>
                         <div class="data-form">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" required>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="data-form">
                             <label for="message">Mensaje</label>
